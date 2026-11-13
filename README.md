@@ -1,44 +1,49 @@
 AegisOps
-AegisOps is an advanced, full-stack enterprise operations and retrieval-augmented generation (RAG) platform built with a high-performance FastAPI backend, a responsive React frontend, and an integrated FAISS vector search engine.
+AegisOps is an advanced, full-stack enterprise operations and compliance validation platform featuring an integrated Retrieval-Augmented Generation (RAG) AI engine. It combines high-performance backend processing, automated compliance auditing, and an intelligent assistant to streamline system monitoring and regulatory governance.
 
-Features
-FastAPI Backend: Asynchronous API architecture supporting fast logging, query handling, and system monitoring.
+🚀 Key Features
+Automated Compliance Validation: Audits operational logs and enterprise data against regulatory frameworks to flag discrepancies and ensure real-time governance.
 
-RAG AI Engine: Combines OpenAI embeddings, LangChain, and FAISS vector search for context-aware technical log retrieval and intelligent assistant queries.
+RAG AI Engine: Integrates OpenAI embeddings, LangChain, and a FAISS vector search database for context-aware technical log retrieval and intelligent assistant queries.
 
-React Frontend: Modern user interface for real-time querying, monitoring logs, and interacting with the system.
+FastAPI Backend: Asynchronous API architecture supporting fast logging, structured database management, and robust query handling.
 
-Data Engineering Integration: Features supporting robust data pipelines, SQLite/PostgreSQL support, and PySpark components.
+React Frontend: Modern user interface for real-time operations monitoring, compliance reporting, and interacting with the AI assistant.
 
-Automated Testing: Integrated with Pytest and Playwright for backend and end-to-end testing reliability.
+Data Engineering Integration: Features structured data pipelines utilizing PySpark and reliable database storage.
 
-Tech Stack
-Backend: Python 3.10+, FastAPI, Uvicorn, SQLAlchemy, LangChain, FAISS, OpenAI API
+Containerization & Testing: Fully containerized with Docker and Docker Compose, supported by Pytest for backend testing reliability.
+
+🛠️ Tech Stack
+Backend: Python, FastAPI, Uvicorn, SQLAlchemy, LangChain, FAISS, OpenAI API
 
 Frontend: React, Axios, HTML5, CSS3
 
-Data & Ops: PySpark, Docker, PostgreSQL / SQLite
+Data & Ops: PySpark, Docker, Docker Compose, SQLite / PostgreSQL
 
-Testing: Pytest, Playwright
+Testing: Pytest
 
-Getting Started Locally
+⚙️ Getting Started Locally
 1. Clone the Repository
+Bash
 git clone https://github.com/akshi1227/aegisops.git
 cd aegisops
-
 2. Set Up the Python Virtual Environment
+Bash
 python -m venv venv
 venv\Scripts\activate     # On Windows
-
+# source venv/bin/activate  # On macOS/Linux
 3. Install Dependencies
+Bash
 pip install -r requirements.txt
-
 4. Configure Environment Variables
 Set your OpenAI API key in your terminal session:
-set OPENAI_API_KEY=your_actual_openai_api_key_here
 
+DOS
+set OPENAI_API_KEY=your_actual_openai_api_key_here
 5. Run the Application
 Start the FastAPI development server using Uvicorn:
-uvicorn main:app --reload --port 8000
 
-Navigate to http://127.0.0.1:8000/docs to view the interactive Swagger API documentation.
+Bash
+uvicorn main:app --reload --port 8000
+Navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser to view the interactive Swagger API documentation.
